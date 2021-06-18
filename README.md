@@ -10,6 +10,7 @@ this project is about getting the Starred Repos in the last 30 days from the end
 - jquery 
 - popper.js 
 - Bootstrap
+- sass for customization
 - ngx-pagination "for the pagination control"
 - font awesome.
 
