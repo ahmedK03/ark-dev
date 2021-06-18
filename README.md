@@ -12,3 +12,10 @@ this project is about getting the Starred Repos in the last 30 days from the end
 - Bootstrap
 - ngx-pagination "for the pagination control"
 - font awesome.
+
+#### how to use it:
+ 
+- first run the command "ng serve --open"
+- once the app is opened. it'll automatically open the first page.
+- list of all 30 pages are on the bottom of the web page.
+- on clicking on the Repo title, it'll open another page with the details without reloading the page
