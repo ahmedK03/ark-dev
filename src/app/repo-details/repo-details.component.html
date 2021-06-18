@@ -1,0 +1,34 @@
+<section>
+    <div class="container">
+        <div class="wrapper mt-4 p-3">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="img">
+                        <img [src]="repoInfo.owner.avatar_url" class="w-100" alt="">
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="items">
+                        <h3 class="display-3 text-primary text-capitalize mb-3">{{repoInfo.name}}</h3>
+                        <p class=" my-3 h3" *ngIf='repoInfo.description; else emptyDesc'>{{repoInfo.description}}
+                        </p>
+                        <ng-template #emptyDesc>
+                            <div class="alert alert-danger emptyDesc ">no description avaliable</div>
+                        </ng-template>
+                        <div class="details d-flex mt-5">
+                            <div class="stars p-2 text-center">
+                                <p class="h4 my-3"><i class="fas fa-star "></i> {{repoInfo.stargazers_count}}</p>
+                            </div>
+                            <div class="issues p-2 ml-4 text-center">
+                                <p class="h4 my-3"><i class="fas fa-exclamation-circle "></i> {{repoInfo.open_issues}}</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

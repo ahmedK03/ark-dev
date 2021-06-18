@@ -1,0 +1,29 @@
+@import "../../styles.scss";
+.wrapper {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 1px 17px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 1px 17px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 17px 0px rgba(0, 0, 0, 0.75);
+    .img {
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 5px;
+        }
+    }
+    .items {
+        .btn {
+            cursor: default !important;
+        }
+        .stars {
+            background-color: #FFEC9B;
+        }
+        .issues {
+            background-color: #FFBCBD;
+        }
+        .emptyDesc {
+            font-style: italic;
+        }
+    }
+}

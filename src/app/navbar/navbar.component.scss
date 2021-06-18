@@ -1,0 +1,32 @@
+@import "../../styles.scss";
+nav {
+    background-color: white;
+    // padding: 25px;
+    transition: all 0.5s;
+    .nav-link {
+        transition: all 0.5s;
+        color: black;
+        position: relative;
+        &:hover {
+            color: $primary_color;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            height: 3px;
+            width: 20px;
+            bottom: 0;
+            left: 9px;
+            background-color: $primary_color;
+        }
+        &:hover::after {
+            transition: all 0.5s;
+            width: 50px;
+        }
+    }
+    .navbar-brand {
+        color: $primary_color;
+        font-size: 2em;
+        margin-right: 15px;
+    }
+}
